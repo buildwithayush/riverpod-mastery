@@ -1,16 +1,25 @@
-# learn_riverpod
+# Riverpod Mastery 🚀
 
-A new Flutter project.
+A structured Flutter repository focused on mastering Riverpod for scalable and production-ready state management.
 
-## Getting Started
+## 📚 What This Repository Covers
 
-This project is a starting point for a Flutter application.
+- Basic Provider
+- StateProvider
+- StateNotifierProvider
+- AsyncValue Handling
+- Clean Architecture with Riverpod
+- Real-world mini examples
 
-A few resources to get you started if this is your first Flutter project:
+## 🎯 Goal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To deeply understand Riverpod concepts and apply them in scalable Flutter applications.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+
+- Flutter
+- flutter_riverpod
+
+---
+
+More examples and advanced patterns will be added progressively.
