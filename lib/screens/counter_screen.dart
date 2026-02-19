@@ -5,6 +5,10 @@ final count = StateProvider<int>((ref) {
   return 0;
 });
 
+final stateProvider = StateProvider<bool>((ref) {
+  return true;
+});
+
 class CounterScreen extends StatelessWidget {
   const CounterScreen({super.key});
 
@@ -22,6 +26,15 @@ class CounterScreen extends StatelessWidget {
                 debugPrint("Text Build");
                 final value = ref.watch(count);
                 return Text(value.toString(), style: TextStyle(fontSize: 40));
+              },
+            ),
+            Consumer(
+              builder: (context, ref, child) {
+                debugPrint("Switch Build");
+                final state = ref.watch(stateProvider);
+                return Switch(value: state, onChanged: (value){
+                   ref.read(stateProvider.notifier).state = value;
+                });
               },
             ),
             Consumer(
